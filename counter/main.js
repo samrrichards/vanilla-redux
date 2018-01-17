@@ -17,10 +17,6 @@ function render() {
 
 store.subscribe(render);
 
-document.getElementById('increment').addEventListener('click', () => {
- store.dispatch({type: "INCREMENT"});
-});
+document.getElementById('increment').addEventListener('click', () => store.dispatch({type: "INCREMENT"}));
 
-document.getElementById('decrement').addEventListener('click', () => {
-  store.dispatch({type: "DECREMENT"});
-});
+document.getElementById('decrement').addEventListener('click', () => store.dispatch({type: "DECREMENT"}));
